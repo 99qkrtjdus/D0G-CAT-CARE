@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>:::company:::</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".slider").bxSlider({
+				mode:"fade",
+				auto:true,
+				controls:false
+			});
+			$(".slider01").bxSlider({
+				pager:false,
+				controls:false,
+				auto:true,
+        mode:"fade"
+			});
+
+			var mySlide = $(".slider2").bxSlider({
+				pager:false,
+				controls:false
+			});
+
+			$(".nextBtn").click(function(){
+        mySlide.goToNextSlide();
+      });
+
+      $(".prevBtn").click(function(){
+        mySlide.goToPrevSlide();
+      });
+		});
+
+		new WOW().init();
+
+		$(document).ready(function(){
+			// $(".togglemenu").on("click",function(){})
+			$(".togglemenu").click(function(){
+				var myClass = $(this).attr("class");
+				console.log(myClass)
+				if(myClass == "togglemenu"){
+					$(".togglemenu").addClass("change");
+					$("#mainmenu").animate({top:0},300)
+				}else{
+					$(".togglemenu").removeClass("change");
+					$("#mainmenu").animate({top:"100%"},300);
+				}
+			})
+		})
+
+	</script>
+
+
+</head>
+
+<body>
+	<header id="mainhd">
+		<div id="hdtop_wrap">
+			<div id="hdtop" class="clearfix">
+				<h1>
+					<a href="#">
+						<img src="img/mainlogo.png" alt="">
+					</a>
+				</h1>
+				<nav id="mainmenu">
+					<ul class="clearfix">
+						<li><a href="#">독캣케어</a>
+							<ul class="submenu">
+								<li><a href="01.dccare/sub01-01.html">독캣케어</a></li>
+								<li><a href="01.dccare/sub01-02.html">비전</a></li>
+								<li><a href="01.dccare/sub01-03.html">독캣뉴스</a></li>
+								<li><a href="01.dccare/sub01-04.html">공지사항</a></li>
+							</ul>
+						</li>
+						<li><a href="#">보호하기</a>
+							<ul class="submenu">
+								<li><a href="02.protect/sub01-01">유기견/유기묘 신고하기</a></li>
+								<li><a href="02.protect/sub01-02">동물학대 신고하기</a></li>
+								<li><a href="02.protect/sub01-03">동물보호 캠페인</a></li>
+								<li><a href="02.protect/sub01-04">동물보호 이벤트</a></li>
+							</ul>
+						</li>
+						<li><a href="#">입양하기</a>
+							<ul class="submenu">
+								<li><a href="03.ibyang/sub03-01.html">보호자교육</a></li>
+								<li><a href="03.ibyang/sub03-02.html">유기견입양</a></li>
+								<li><a href="03.ibyang/sub03-03.html">유기묘입양</a></li>
+								<li><a href="03.ibyang/sub03-04.html">입양갤러리</a></li>
+							</ul>
+						</li>
+						<li><a href="#">봉사하기</a>
+							<ul class="submenu">
+								<li><a href="04.bongsa/sub04-01.html">유기견 봉사활동</a></li>
+								<li><a href="04.bongsa/sub04-02.html">유기묘 봉사활동</a></li>
+								<li><a href="04.bongsa/sub04-03.html">기부하기</a></li>
+								<li><a href="04.bongsa/sub04-04.html">봉사갤러리</a></li>
+							</ul>
+						</li>
+						<li><a href="#">정보공유</a>
+							<ul class="submenu">
+								<li><a href="jbgu/sub05-01.html">강아지키우기</a></li>
+								<li><a href="jbgu/sub05-01.html">고양이키우기</a></li>
+								<li><a href="jbgu/sub05-01.html">보호소이야기</a></li>
+								<li><a href="jbgu/sub05-01.html">Q&A</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="togglemenu">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+				  <div class="bar3"></div>
+	      </div>
+			</div>
+		</div>
+
+		<div class="sliderwrap">
+			<ul class="slider">
+				<li class="slide_1st">
+					<div class="slidertxt">
+						<h3>We protect them</h3>
+						<p>
+							유기견, 유기묘를 구조, 보호하는 단체 독캣케어.
+							<br>
+							모든 유기견, 유기묘가 조금이나마 따뜻하고 행복한 삶을 살 수 있도록
+							<br>
+							독캣케어는 언제나 최선을 다하겠습니다.
+						</p>
+					</div>
+				</li>
+				<li class="slide_2nd">
+					<div class="slidertxt">
+						<h3>We protect them</h3>
+						<p>
+				      유기견, 유기묘를 구조, 보호하는 단체 독캣케어.
+							<br>
+							모든 유기견, 유기묘가 조금이나마 따뜻하고 행복한 삶을 살 수 있도록
+							<br>
+							독캣케어는 언제나 최선을 다하겠습니다.
+						</p>
+					</div>
+				</li>
+				<li class="slide_3th">
+					<div class="slidertxt">
+						<h3>We protect them</h3>
+						<p>
+				      유기견, 유기묘를 구조, 보호하는 단체 독캣케어.
+							<br>
+							모든 유기견, 유기묘가 조금이나마 따뜻하고 행복한 삶을 살 수 있도록
+							<br>
+							독캣케어는 언제나 최선을 다하겠습니다.
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="content">
+			<ul class="clearfix">
+		    <li class="ct1st">
+		    	<a href="#" class="iconlink">
+		    		<img src="img/icon001.png" alt="봉사하기" class="icon">
+		    		<p>봉사하기</p>
+		    	</a> 
+		    </li>
+
+		    <li class="ct2st">
+		    	<a href="#">
+		    	  <img src="img/main002.jpg" alt="영상" class="video"> 
+		    	  <img src="img/icon01_06.png" alt="영상실행" class="play">
+		      </a>
+		    </li>
+
+		    <li class="ct3st">
+		    	<h2>독캣뉴스</h2>
+          <div class="slider2wrap">
+	          <ul class="slider2">
+		          <li class="clearfix">
+			          <div class="left">
+			 	          방탄소년단 뷔 팬들, <br>유기견 보호소에 <br>기부로 훈훈한 정 나눠
+			          </div>
+			          <div class="right">
+				          <img src="img/main03_01.jpg" alt="img01">
+			          </div>
+		          </li>
+		          <li class="clearfix">
+			          <div class="left">
+			 	          키움의 따뜻한 겨울… <br> 이지영, 후배들과 <br>유기견 보호소 봉사활동 
+			          </div>
+			          <div class="right">
+				          <img src="img/main03_02.jpg" alt="img02">
+			          </div>
+		          </li>
+		          <li class="clearfix">
+			          <div class="left">
+			 	          최근 서울 양천구 신월동에서<br> 2020년생 갈색 고양이 구조
+			          </div>
+			          <div class="right">
+				          <img src="img/main03_03.jpg" alt="img03">
+			          </div>
+		          </li> 
+	          </ul>
+          </div>
+          <div class="btn clearfix">
+          	<img src="images/btn01_01.jpg" alt="prev" class="prevBtn">
+          	<img src="images/btn01_02.jpg" alt="next" class="nextBtn">          	
+          </div>
+		    </li>
+
+		    <li class="ct4st" class="iconlink">
+		    	<a href="#" class="iconlink">
+		    	   <img src="img/icon004.png" alt="공지사항" class="icon">
+		    	   <p>공지사항</p>
+		      </a>
+		    </li>
+
+		    <li class="ct5st" class="iconlink">
+		    	<a href="#" class="iconlink">
+		    		<img src="img/icon005.png" alt="기부하기" class="icon">
+		    		<p>기부하기</p>
+		      </a>
+		    </li>
+
+		    <li class="ct6st">
+		    	<a href="#">
+		    	  <img src="img/main006.jpg" alt="독캣케어">
+		    	  <div class="card">
+							<h3>독캣케어</h3>
+							<p>Dog&CatCare<br>유기견,유기묘 보호단체</p>
+						</div>
+		    	</a>
+		    </li>
+
+		    <li class="ct7st">
+		      <ul class="slider01">
+		      	<li>
+		      		<a href="#">
+		      			<img src="img/campain02.jpg" alt=""> 
+		      		</a>
+		      	</li>
+		      	<li>
+		      		<a href="#">
+		      			<img src="img/campain03.jpg" alt=""> 
+		      		</a>
+		      	</li>
+		      	<li>
+		      		<a href="#">
+		      			<img src="img/campain01.jpg" alt=""> 
+		      		</a>
+		      	</li>
+		      </ul>
+		    </li>
+
+		    <li class="ct8st">
+		    	<a href="#">
+		    		<img src="img/main008.jpg" alt="유기견 입양하기">
+		    	  <div class="card">
+							<h3>유기견 입양하기</h3>
+							<p>사랑이 필요한 아이들에게<br>따뜻한 손길을 내밀어 주세요</p>
+						</div>
+		    	</a>
+		    </li>
+
+		    <li class="ct9st" class="iconlink">
+		    	<a href="#" class="iconlink">
+		    		<img src="img/icon009.png" alt="보호소 이야기" class="icon">
+		    		<p>보호소 이야기</p>
+		    	</a>
+		    </li>
+
+		    <li class="ct10st" class="iconlink">
+		    	<a href="#" class="iconlink">
+		    		<img src="img/icon010.png" alt="보호자 교육" class="icon">
+		    		<p>보호자 교육</p>
+		    	</a>
+		    </li>
+
+		    <li class="ct11st">
+		    	<a href="#">
+		    		<img src="img/main011.jpg" alt="유기묘 입양하기">
+		    		<div class="card">
+							<h3>유기묘 입양하기</h3>
+							<p>갈 곳 잃은 아이들에게<br>가족이 되어주세요</p>
+						</div>
+		      </a>
+		    </li>
+
+			</ul>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="section">
+      <div class="maintxt">
+	      <h4>핵심가치</h4>
+	      <p>Core Value</p>
+      </div>
+			<ul class="value clearfix">
+
+				<li class="wow jackInTheBox" data-wow-delay="0">
+					<div class="card">
+						<img src="img/section01.png" alt="value01">
+						<div class="card_body">
+							<h3>반려동물을 생명체로 <br>존중하는 마음</h3>
+						</div>
+					</div>
+				</li>
+
+				<li class="wow jackInTheBox" data-wow-delay="0.3s">
+					<div class="card">						
+						<img src="img/section02.png" alt="value02">						
+						<div class="card_body">
+							<h3>반려동물의 대변자</h3>
+						</div>
+					</div>
+				</li>
+
+				<li class="wow jackInTheBox" data-wow-delay="0.6s">
+					<div class="card">						
+						<img src="img/section03.png" alt="value03">
+						<div class="card_body">
+							<h3>문화로 정착되는 <br>동물보호</h3>
+						</div>
+					</div>
+				</li>
+
+				<li class="wow jackInTheBox" data-wow-delay="0.9s">
+					<div class="card">						
+						<img src="img/section04.png" alt="value04">
+						<div class="card_body">
+							<h3>협력과 성실</h3> 
+						</div>
+					</div>
+				</li>
+			</ul>    
+		</div>
+	</div>
+
+  <article class="article">
+  	<div class="awrap">
+  		<ul>
+         <li class="art01"></li>
+         <li class="art02"><img src="img/sns01.jpg" alt="sns01"></li>
+         <li class="art03"></li>
+         <li class="art04"><img src="img/sns03.jpg" alt="sns03"></li>
+         <li class="art05"></li>
+         <li class="art06"><img src="img/sns02.jpg" alt="sns02"></li>
+         <li class="art07"></li>
+
+  		</ul>
+  	</div>
+  </article>
+
+  <div class="post">
+  	<div class="postbox">
+  		<img src="img/veryvery02.jpg" alt="베리베리">
+  		<div class="textbox">
+  			<p class="tb">
+  				VeryVery와 함께하는 <br>스타입양 캠페인
+  			</p>
+  			<p class="tbox">
+  				<a href="https://www.animals.or.kr/center/star">자세히 보기</a>
+  			</p>
+  		</div>
+  	</div>
+  </div>
+
+
+	<footer class="footer">
+  	<div class="addresswrap">
+  		<p class="top">
+  			이용약관 | 개인정보취급방침 | 사이트맵 | 고객센터 | 광고 및 제휴문의
+  		</p>
+  		<p>
+        123-456 서울특별시 강서구 공항동 (주)독캣케어 사업자등록번호 : 123-45-6782020
+        대표이사 : 김독캣  대표번호 : 02-1234-5678 E-Mail: dogcat22@naver.com
+      </p>
+      <p> Copyright(c) HIMEDIA TOUR ALL RIGHT RESERVED</p>
+  	</div>
+  </footer>	
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+@charset "utf-8";
+
+@import "pc.css" all and (min-width: 960px);
+@import "mobile.css" all and (max-width: 959px);
