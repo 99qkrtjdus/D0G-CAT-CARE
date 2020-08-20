@@ -69,7 +69,7 @@ nav#mainmenu>ul>li:hover a{color: #fff;}
 .submenu>li:hover a{background-color: orange;}
 
 nav#mainmenu>ul:hover .submenu{display: block;}
-.submenu>li a{font-size: 12px;}
+.submenu>li a{font-size: 14px;}
 
 .togglemenu{
 	float: right;
@@ -211,6 +211,9 @@ nav#mainmenu>ul:hover .submenu{display: block;}
 
 
 
+
+
+
 .content>ul>li.ct3st{width: 50%;}
 
 .content>ul>li.ct3st h2{
@@ -229,6 +232,7 @@ nav#mainmenu>ul:hover .submenu{display: block;}
 	padding-left: 50px; 
 	padding-right: 50px;
 	background-color: #fff;
+	line-height: 40px;
 } 
 
 .content>ul>li.ct3st .slider2 li div.left:after{
@@ -364,13 +368,27 @@ nav#mainmenu>ul:hover .submenu{display: block;}
 
 .awrap>ul>li{width: 25%; height: 315px; float: left;}
 
-.awrap>ul>li.art01{height: 630px; background-color: #372f2d;}
+.awrap>ul>li.art01{
+	height: 630px; background-color: #372f2d; color: orange; text-align: center; 
+    font-size: 20px; padding-top: 250px; line-height: 50px;
+}
 .awrap>ul>li.art02{}
-.awrap>ul>li.art03{}
+
+.awrap>ul>li.art03{margin: 0 auto;}
+.awrap>ul>li.art03 p{text-align: center; color: gray; line-height: 30px; padding-top: 20px;}
+.awrap>ul>li.art03 p span {color: #000;}
+
 .awrap>ul>li.art04{}
-.awrap>ul>li.art05{}
+
+.awrap>ul>li.art05{margin: 0 auto;}
+.awrap>ul>li.art05 p{text-align: center; color: gray; line-height: 30px; padding-top: 20px;}
+.awrap>ul>li.art05 p span {color: #000;}
+
 .awrap>ul>li.art06{}
-.awrap>ul>li.art07{}
+
+.awrap>ul>li.art07{margin: 0 auto;}
+.awrap>ul>li.art07 p{text-align: center; color: gray; line-height: 30px; padding-top: 20px;}
+.awrap>ul>li.art07 p span {color: #000;}
 
 
 
